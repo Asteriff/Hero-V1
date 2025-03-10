@@ -1,0 +1,14 @@
+- Extract Zip to Desktop.
+- Ensure the latest version of Android Studio (Iguana) is installed.
+- Open Android Studio to show list of past projects or blank screen.
+- Drag "HeroModelApp - Copy" into Android Studio.
+- Run it and wait, (it can take a long time or even get stuck you can restart it which fixed my problem)
+- Application should be accessible
+
+- Open Visual Studio
+- Open folder...
+- Select "Model" folder
+- Select Run. 
+- Navigate to http://127.0.0.1:5000/ (this can also take some time please be patient)
+
+- There is a readme in "Model" folder with additional information that you might find helpful.

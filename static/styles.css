@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(41, 41, 42);
+}
+
+h1 {
+    color: rgb(220, 220, 220);
+    position: fixed;
+    top: 50px;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+}
+
+form {
+    position: fixed;
+    bottom: 20px;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input {
+    width: 500px; 
+    height: 25px;
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 1px solid #6f6f6f; 
+    background-color: #4f4f4f;
+    color:azure;
+}
+
+button {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+p {
+    color: azure;
+    position: fixed;
+    bottom: 50px;
+    right: 30%;
+
+}

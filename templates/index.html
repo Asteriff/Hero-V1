@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="/static/styles.css">
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Tell me your symptoms and I will try to categorise it for you</h1>
+    <form method="POST">
+        <input type="text" name="user_input">
+        <button type="submit">Submit</button>
+    </form>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
