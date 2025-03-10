@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReminderActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true">
+        <!-- Appointments -->
+        <RelativeLayout
+            android:id="@+id/appointments_card"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/reminder_card">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/appointments_text"
+                android:text="Appointments"
+                style="@style/text"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/appointments_number"
+                android:text="#0"
+                style="@style/text"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+        <!-- Medications -->
+        <RelativeLayout
+            android:id="@+id/meds_card"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/reminder_card"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meds_text"
+                android:text="Medications"
+                style="@style/text"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meds_number"
+                android:text="#0"
+                style="@style/text"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+        <!-- General -->
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/meds_card"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/reminder_card"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/general_text"
+                android:text="General"
+                style="@style/text"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/general_number"
+                android:text="#0"
+                style="@style/text"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+        <!-- Family Visits -->
+        <RelativeLayout
+            android:id="@+id/family_card"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/appointments_card"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/reminder_card">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/family_text"
+                android:text="Family Visits"
+                style="@style/text"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/family_number"
+                android:text="#0"
+                style="@style/text"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:id="@+id/reminders_edit">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reminders_text"
+            android:text="All Reminders"
+            style="@style/text"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/Transparent"
+            android:text="Add"
+            style="@style/text"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReminders"
+        android:layout_below="@id/reminders_edit"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigationView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selection"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"/>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HeroModelApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="screen">
+        <item name="android:background">#111521</item>
+    </style>
+
+    <!-- Text Dark -->
+    <style name="text">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Edit Text Background Dark -->
+    <style name="edit_background">
+        <item name="android:textColor">#1E2437</item>
+    </style>
+
+    <!-- Button Background Dark -->
+    <style name="button_background">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Button Text Dark -->
+    <style name="button_text">
+        <item name="android:textColor">#FF000000</item>
+    </style>
+</resources>

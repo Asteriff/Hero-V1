@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HeroModelApp</string>
+    <string name="tanc_title">Terms and Conditions</string>
+    <string name="tanc_Description">Thank you for using my Healthcare AI App ("CareBot"). By accessing and using the App, you agree to comply with and be bound by the following terms and conditions:\nUse of Information: The information provided by the App is for informational purposes only and should not be considered medical advice. Always consult a qualified healthcare professional for diagnosis and treatment.\nPrivacy: We respect your privacy and are committed to protecting your personal information. Please review our Privacy Policy to understand how we collect, use, and disclose your information.\nContact Us: If you have any questions or concerns about these terms and conditions, please contact us at 2013687@leedstrinity.ac.uk.\nBy using the App, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.</string>
+</resources>

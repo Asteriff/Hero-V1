@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/reminder_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder Title"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/reminder_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder Description"
+        android:layout_below="@id/reminder_title"
+        android:inputType="text"/>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_below="@id/reminder_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"/>
+
+    <TimePicker
+        android:layout_below="@id/datePicker"
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+</RelativeLayout>
